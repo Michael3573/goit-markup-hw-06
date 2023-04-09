@@ -421,13 +421,18 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close class="close-btn-img">Закрыть</button>
+        <button data-modal-close class="close-btn-img">
+          <svg class="icon-vector" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
         <p class="modal-form-text">
           Leave your contacts and we will call you back
         </p>
+
         <form class="form">
-          <label class="modal-tex"
-            ><span>Name</span>
+          <label class="modal-text"
+            ><span class="form-subfield">Name</span>
             <span class="form-field">
               <input type="text" name="name" id="name" class="column" />
               <svg class="icon-modal" width="18" height="24">
@@ -436,8 +441,8 @@
             </span>
           </label>
 
-          <label class="modal-tex"
-            ><span>Phone</span>
+          <label class="modal-text"
+            ><span class="form-subfield">Phone</span>
             <span class="form-field">
               <input type="tel" name="tel" id="tel" class="column" />
               <svg class="icon-modal" width="18" height="24">
@@ -446,8 +451,8 @@
             </span>
           </label>
 
-          <label for="email" class="modal-tex"
-            ><span>Email</span>
+          <label for="email" class="modal-text"
+            ><span class="form-subfield">Email</span>
             <span class="form-field">
               <input type="email" name="email" id="email" class="column" />
               <svg class="icon-modal" width="18" height="24">
@@ -457,7 +462,7 @@
           </label>
 
           <div class="form-field">
-            <label for="comment" class="modal-tex">Comment</label>
+            <label for="comment" class="modal-text">Comment</label>
             <textarea
               name="comment"
               id="comment"
@@ -469,26 +474,22 @@
           </div>
 
           <div class="form-field-comment">
-            <!-- Hiden checkbox -->
             <input
               type="checkbox"
               name="policy"
               id="policy"
               class="checkbox-policy"
+              checked
             />
 
-            <svg class="policy-image" width="16" height="16">
-              <use href="./images/symbol-defs.svg#icon-checkbox-checked"></use>
-            </svg>
-
-            <label for="policy" class="text-policy"
+            <label for="policy"
               >I accept the terms and conditions of the
               <a href="" class="link-policy">Privacy Policy</a></label
             >
           </div>
 
           <div class="form-btn">
-            <button type="submit" class="btn-modal">Send</button>
+            <button type="submit" class="btn-modal hover-btn">Send</button>
           </div>
         </form>
       </div>
