@@ -689,7 +689,8 @@ fill: var(--color);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    padding-left: 8px;
+    margin-left: 24px;
+    align-content: center;
 }
 
 .btn-modal{
@@ -734,14 +735,13 @@ fill: var(--color);
 
 
 .option {
-    display: block;
     margin-bottom: 0.5em;
 }
 
 /* Check */
 
 .check {
-    margin-right: 8px;
+    padding-right: 8px;
 }
 
 .check__input {
@@ -755,9 +755,9 @@ fill: var(--color);
 .check__box {
     position: absolute;
     margin-top: 0.2em;
-    margin-left: -1em;
-    width: 1em;
-    height: 1em;
+    margin-left: -24px;
+    width: 16px;
+    height: 16px;
     overflow: hidden;
     background-color: white;
     background-repeat: no-repeat;
@@ -765,6 +765,7 @@ fill: var(--color);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     padding-left: 8px;
+    align-content: center;
 }
 
 /* Checked */
