@@ -538,23 +538,6 @@ img {
     transform: translateY(0%);
 }
 
-/* .close-btn-img{
-    position: absolute;
-    right: 24px;
-    top: 24px;
-    background-image: url("../images/symbol-defs.svg#icon-Vector");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    text-indent: -9999px;
-    background: #E7E9FC;
-    border-radius: 50%;
-} */
-
 .close-btn-img{
     position: absolute;
     right: 24px;
@@ -570,6 +553,7 @@ img {
     border: none;
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .close-btn-img:hover{
@@ -637,7 +621,7 @@ img {
 
 .form-subfield{
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .form-field :last-child {
@@ -691,6 +675,7 @@ fill: var(--color);
     line-height: 1.17;
     letter-spacing: 0.04em;
     background: transparent;
+    height: 120px;
 }
 
 .comment-column:focus{
@@ -746,10 +731,66 @@ fill: var(--color);
     transform: translateY(-50%)
 }
 
-.checkbox-policy{
+
+
+.option {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Check */
+
+.check {
     margin-right: 8px;
 }
 
+.check__input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.check__box {
+    position: absolute;
+    margin-top: 0.2em;
+    margin-left: -1em;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    padding-left: 8px;
+}
+
+/* Checked */
+
+.check__input:checked+.check__box {
+    background-color: #4A90E2;
+    background-image: url("../images/check.svg");
+}
+
+/* Focused */
+
+.check__input:focus+.check__box {
+    box-shadow:
+        0 0 0 0.1em #4A90E2,
+        /* 0 0 0 0.2em #7ED321; */
+}
+
+/* Disabled */
+
+.check__input:disabled+.check__box {
+    box-shadow: 0 0 0 0.1em #9B9B9B;
+}
+
+.check__input:checked:disabled+.check__box {
+    background-color: #9B9B9B;
+}
 
 /* ============================Footer========================= */
 
